@@ -1,0 +1,72 @@
+-- create database
+
+use training
+
+--create collection
+
+db.createCollection('books')
+
+-- create 
+
+-- insert record
+db.books.insert({
+"name":"A thousand splendid sun",
+})
+
+db.books.insert({
+"name":"Kafka on the shore",
+})
+
+db.books.insert({
+"name":"milk and honey",
+"author":"rupa kaur"
+})
+
+db.books.insert({
+"name":"bees and honey",
+"author":"rupa kaur"
+})
+
+
+-- update the document without creating the new record
+
+db.books.update({name : 'a thousand splendid sun 2'},
+{	
+	$set:{
+		author : 'khaledd'
+		}
+}
+)
+
+-- update the record..if record doesnt exist it will create new record
+
+db.books.update({name : 'a thousand splendid sun'},
+{
+		name : 'a thousand splendid sun 2',
+		author : 'khaled'
+},
+	{
+		upsert : true
+	}
+)
+
+-- rename
+
+db.books.update({name:"bees and honey"},{$rename : {author : 'Rozi'}})
+
+-- delete
+
+ db.books.remove({name:'A thousand splendid sun'})
+
+-- create index
+
+db.books.createIndex({name : 'text'})
+
+-- search through index
+
+db.books.find({
+$text:{
+	$search: "\"a thousand\""
+}
+}).pretty()
+
