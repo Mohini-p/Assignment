@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+    <head>
+        <!--<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link src="D:\Training\HTML\Admin Panel\bootstrap-5.0.2-dist\css\bootstrap.min.css" rel="stylesheet"> 
+        <style>
+            .table{
+                margin: 2px;
+            }
+            .h3{
+                margin-top: 15px;
+                margin-left: 15px;
+                text-align: center;
+            }
+
+            p{
+                margin: 2px;
+                font-family:monospace;
+                font-size: medium;
+            }
+
+        </style>
+        <title>
+            E-commarce Page
+        </title>
+
+    </head>
+    <body>
+        <div style="display: inline-flex;width: 100%;">
+            <div style="border: 2px solid black; width: 50%; display:block">
+            <h3 class="h3">Add Product</h3>
+            <form id="myForm" onsubmit="return false" style="margin-left: 22%;">
+                <table class='table' cellspacing=5>
+                    <tr>
+                        <td>
+                            <label>Product Name :</label>
+                        </td>
+                        <td>
+                            <input id="pname" type="text"  value="pen" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Product Image :</label>
+                        </td>
+                        <td>
+                            <input name="productImage" id="pimg" type="file" accept="image/png, image/jpg, image/jpeg" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Product Description :</label>
+                        </td>
+                        <td>
+                            <input id="pdesc" type="text" value="multicolor ballpen" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Quantity :</label>
+                        </td>
+                        <td>
+                            <input id="pqty" type="number" value="12" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Price :</label>
+                        </td>
+                        <td>
+                            <input id="pprice" type="number" value="12"  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="text-align: center; padding: 15px;">
+                            <button id='pbtn' onclick="setData();formReset();">Add Product</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+            <div id="plist" style="border: 2px solid black;margin-left: 10px; width: 50%;padding-left: 5px;"> 
+                <h3 class="h3">Product List</h3>
+            </div>
+        </div>
+            <div id="cart" style="margin-top: 5px; border: 2px solid black; width: 49%;display: flex-left;">
+                <h3 class="h3">Cart</h3>      
+            </div>
+
+        <script src='script.js'></script>
+    </body>
+</html>
