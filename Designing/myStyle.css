@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.upperdiv{
+    background-color: #E5E4E2;
+    height: 25px;
+}
+
+.wrap{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.grid-container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 2% 9% 12% 54% 11% 2% 2% 2% 3% 3%;
+}
+
+.grid-items{
+    margin: 2px;
+    padding: 2px;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: auto auto 5%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.item{
+    margin-top: 40px;
+}
+
+.header{
+    background-color:#483d8b;
+    margin-top: 8%;
+    height: 45px;
+    color: white;
+}
+
+.w{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px;
+    width: 70%;
+}
+
+.grid-header{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.w.span{
+    margin-left: 2px;
+}
+
+.back_img{
+    height: 65vh;
+    width: 100%;
+}
+
+.phara_styling{
+    padding: 10%;
+    padding-left: 15%;
+    height: 250px;
+}
+
+.topline{
+    color: #483d8b;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secline{
+    font-weight: bold;
+    font-size: 22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.phara{
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    color: white;
+    background-color:#483d8b;
+    border: none;
+    margin-top: 2%;
+    padding: 13px;
+}
+
+.topline1{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secline2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #483d8b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back_img1{
+    height: 400px;
+    width: 300px;
+}
+
+.phara_styling1{
+    margin-top: 7%;
+    margin-left: 15%;
+}
+
+.offer-title{
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.offer-content{
+    color: gray;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dark-blue-color{
+    color: darkblue;
+}
+
+.blue-color{
+    color: #00acee;
+}
+
+.red-color{
+    color: #FF0000;
+}
+
+.blue-text{
+    color: #483d8b;
+}
+
+.big-font{
+    font-size: large;
+}
+
+td{
+    padding: 5px;
+}
